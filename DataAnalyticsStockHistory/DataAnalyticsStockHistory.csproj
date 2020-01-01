@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>DataAnalyticsStockHistory</RootNamespace>
     <AssemblyName>DataAnalyticsStockHistory</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,11 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyFinancials.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data\constituents-financials_csv.csv" />
+    <None Include="Data\constituents-financials_json.json" />
+    <None Include="Data\constituents_csv.csv" />
+    <None Include="Data\constituents_json.json" />
+    <None Include="Data\datapackage.json" />
+    <None Include="Data\README.md" />
+    <None Include="Data\s-and-p-500-companies-financials_zip.zip" />
+    <None Include="Data\validation_report.json" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
