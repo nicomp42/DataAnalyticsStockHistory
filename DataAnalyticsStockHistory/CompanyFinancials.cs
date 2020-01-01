@@ -9,6 +9,9 @@ using System.Text;
 
 namespace DataAnalyticsStockHistory
 {
+    /// <summary>
+    /// A model to store data read from the constituents-financials_csv.csv file as downloaded from https://datahub.io/core/s-and-p-500-companies-financials
+    /// </summary>
     class CompanyFinancials
     {
         public CompanyFinancials(String symbol, String name, String sector, double price, double priceEarnings) {
